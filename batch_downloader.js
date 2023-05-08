@@ -53,7 +53,7 @@ async function downloadAllOnPage(){ // Downloading routine
     //console.log(stockItems);
 
     let counter = 0;
-    stockItems.forEach(async item => { // We have to use this kind of forEach (not for...of...) because this doesn't wait for the callbacks to finish
+    for(let item of stockItems){ // We have to use this kind of for...of... (not forEach) because this does wait for the callbacks to finish
         //console.log(item);
         let apiJSON = await $.ajax({    // Could probably also use fetch, but I know how to use jQ ajax..
             type: "GET",    // Ask Storyblocks to verify our download
@@ -66,7 +66,7 @@ async function downloadAllOnPage(){ // Downloading routine
         saveAs(blob, `${item[1]}_${item[0]}.wav`); // Download the file
 
         if(++counter > 100 ) return; // Safety Break after 100th item!!!! (There should be only 45 on every page)
-    });
+    }
 
     return;
 }
