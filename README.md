@@ -11,3 +11,9 @@ These scripts might break with future revisions of the Storyblocks site, and com
 To use the scripts, first install [Tampermonkey](https://www.tampermonkey.net/). Than create a new script in there and paste the file from here. One you visit a storyblocks.com/audio site, the scripts activate automaticly.
 
 **When BATCH downloading, set the desired file destination as default in your browser and unselect 'Ask on every download'** otherwise you'll go mad clicking 'OK'...
+
+# WARNING
+
+Storyblocks prohibits usage of scripts such as this one in the 'Individual License'. You are not allowed to "stock-pile clips", with an example given, that downloding a few dozen is no problem, but downloading 500 definitly breaks the rules and the spirit of them.
+
+My subscription was canceled after about 2000 downloaded files.
